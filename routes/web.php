@@ -10,3 +10,5 @@ Route::post('/movie/store', 'HomeController@store') -> name('store');
 
 Route::get('/movie/edit/{id}', 'HomeController@edit') -> name('edit');
 Route::post('/movie/update/{id}', 'HomeController@update') -> name('update');
+
+Route::get('/movie/delete/{id}', 'HomeController@delete') -> name('delete');

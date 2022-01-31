@@ -48,4 +48,10 @@ class HomeController extends Controller
         $movie -> update($data);
         return redirect() -> route('home');
     }
+
+    public function delete($id) {
+        $movie = Movie::findOrFail($id);
+        $movie -> delete();
+        return redirect() -> route('home');
+    }
 }

@@ -24,6 +24,11 @@
                             Modifica film
                         </a>
                     </button>
+                    <button>
+                        <a href="{{ route('delete', $movie -> id) }}">
+                            Elimina definitivamente il film
+                        </a>
+                    </button>
                 </li>
             @endforeach
         </ul>
