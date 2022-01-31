@@ -1,5 +1,7 @@
 <header>
     <h1>
-        Questo &egrave; l&apos; header
+        <a href="{{route('home')}}">
+            Home
+        </a>
     </h1>
 </header>

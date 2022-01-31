@@ -5,7 +5,11 @@
         <ul id="movies">
             @foreach ($movies as $movie)
                 <li class="movie">
-                    <h3>{{ $movie -> title }}</h3>
+                    <h3>
+                        <a href="{{route('movie', $movie -> id)}}">
+                            {{ $movie -> title }}
+                        </a>
+                    </h3>
                     <p>{{ $movie -> subtitle }}</p>
                     <span>{{ $movie -> release_date }}</span>
                 </li>
