@@ -19,6 +19,11 @@
                     </h3>
                     <p>{{ $movie -> subtitle }}</p>
                     <span>{{ $movie -> release_date }}</span>
+                    <button>
+                        <a href="{{ route('edit', $movie -> id) }}">
+                            Modifica film
+                        </a>
+                    </button>
                 </li>
             @endforeach
         </ul>
