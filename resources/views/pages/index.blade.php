@@ -1,6 +1,13 @@
 @extends('layouts.main-layout')
 @section('content')
     <main>
+
+        <button id="add_film">
+            <a href="{{ route('create') }}">
+                Aggiungi un nuovo film
+            </a>
+        </button>
+
         <h2> Movies </h2>
         <ul id="movies">
             @foreach ($movies as $movie)

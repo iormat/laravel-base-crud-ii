@@ -4,3 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index') -> name('home');
 Route::get('/movie/show{id}', 'HomeController@show') -> name('movie');
+
+Route::get('/movie/create', 'HomeController@create') -> name('create');
+Route::post('/movie/store', 'HomeController@store') -> name('store');
